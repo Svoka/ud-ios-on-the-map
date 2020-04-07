@@ -9,21 +9,45 @@
 /* Begin PBXBuildFile section */
 		EE96EC6C243C6163006F6389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC6B243C6163006F6389 /* AppDelegate.swift */; };
 		EE96EC6E243C6163006F6389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC6D243C6163006F6389 /* SceneDelegate.swift */; };
-		EE96EC70243C6163006F6389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC6F243C6163006F6389 /* ViewController.swift */; };
+		EE96EC70243C6163006F6389 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC6F243C6163006F6389 /* LoginViewController.swift */; };
 		EE96EC73243C6163006F6389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE96EC71243C6163006F6389 /* Main.storyboard */; };
 		EE96EC75243C6163006F6389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE96EC74243C6163006F6389 /* Assets.xcassets */; };
 		EE96EC78243C6163006F6389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE96EC76243C6163006F6389 /* LaunchScreen.storyboard */; };
+		EE96EC83243C64D4006F6389 /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC82243C64D4006F6389 /* LocationTableViewController.swift */; };
+		EE96EC86243C652A006F6389 /* StudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC85243C652A006F6389 /* StudentLocation.swift */; };
+		EE96EC88243C68E1006F6389 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC87243C68E1006F6389 /* MapViewController.swift */; };
+		EE96EC8A243C7BA1006F6389 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC89243C7BA1006F6389 /* Api.swift */; };
+		EE96EC8C243C811D006F6389 /* LocationsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC8B243C811D006F6389 /* LocationsResult.swift */; };
+		EE96EC8E243C9453006F6389 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC8D243C9453006F6389 /* AddLocationViewController.swift */; };
+		EE96EC90243C946C006F6389 /* GeoCodingResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC8F243C946C006F6389 /* GeoCodingResultViewController.swift */; };
+		EE96EC92243CA807006F6389 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC91243CA807006F6389 /* Student.swift */; };
+		EE96EC94243CACE3006F6389 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC93243CACE3006F6389 /* AuthRequest.swift */; };
+		EE96EC96243CAFCA006F6389 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC95243CAFCA006F6389 /* AuthResponse.swift */; };
+		EE96EC99243CE483006F6389 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC98243CE483006F6389 /* ApiClient.swift */; };
+		EE96EC9B243D05AC006F6389 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC9A243D05AC006F6389 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE96EC68243C6163006F6389 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE96EC6B243C6163006F6389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE96EC6D243C6163006F6389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE96EC6F243C6163006F6389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE96EC6F243C6163006F6389 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EE96EC72243C6163006F6389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE96EC74243C6163006F6389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE96EC77243C6163006F6389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE96EC79243C6163006F6389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE96EC82243C64D4006F6389 /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
+		EE96EC85243C652A006F6389 /* StudentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocation.swift; sourceTree = "<group>"; };
+		EE96EC87243C68E1006F6389 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EE96EC89243C7BA1006F6389 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		EE96EC8B243C811D006F6389 /* LocationsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsResult.swift; sourceTree = "<group>"; };
+		EE96EC8D243C9453006F6389 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		EE96EC8F243C946C006F6389 /* GeoCodingResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCodingResultViewController.swift; sourceTree = "<group>"; };
+		EE96EC91243CA807006F6389 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		EE96EC93243CACE3006F6389 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		EE96EC95243CAFCA006F6389 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		EE96EC98243CE483006F6389 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		EE96EC9A243D05AC006F6389 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,51 @@
 		EE96EC6A243C6163006F6389 /* OnTheMap */ = {
 			isa = PBXGroup;
 			children = (
-				EE96EC6B243C6163006F6389 /* AppDelegate.swift */,
-				EE96EC6D243C6163006F6389 /* SceneDelegate.swift */,
-				EE96EC6F243C6163006F6389 /* ViewController.swift */,
+				EE96EC97243CE45A006F6389 /* API client */,
+				EE96EC84243C651B006F6389 /* model */,
+				EE96EC7F243C645C006F6389 /* controller */,
 				EE96EC71243C6163006F6389 /* Main.storyboard */,
 				EE96EC74243C6163006F6389 /* Assets.xcassets */,
 				EE96EC76243C6163006F6389 /* LaunchScreen.storyboard */,
 				EE96EC79243C6163006F6389 /* Info.plist */,
 			);
 			path = OnTheMap;
+			sourceTree = "<group>";
+		};
+		EE96EC7F243C645C006F6389 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE96EC6B243C6163006F6389 /* AppDelegate.swift */,
+				EE96EC6D243C6163006F6389 /* SceneDelegate.swift */,
+				EE96EC6F243C6163006F6389 /* LoginViewController.swift */,
+				EE96EC82243C64D4006F6389 /* LocationTableViewController.swift */,
+				EE96EC87243C68E1006F6389 /* MapViewController.swift */,
+				EE96EC8D243C9453006F6389 /* AddLocationViewController.swift */,
+				EE96EC8F243C946C006F6389 /* GeoCodingResultViewController.swift */,
+				EE96EC9A243D05AC006F6389 /* Utils.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EE96EC84243C651B006F6389 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EE96EC85243C652A006F6389 /* StudentLocation.swift */,
+				EE96EC89243C7BA1006F6389 /* Api.swift */,
+				EE96EC8B243C811D006F6389 /* LocationsResult.swift */,
+				EE96EC91243CA807006F6389 /* Student.swift */,
+				EE96EC93243CACE3006F6389 /* AuthRequest.swift */,
+				EE96EC95243CAFCA006F6389 /* AuthResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		EE96EC97243CE45A006F6389 /* API client */ = {
+			isa = PBXGroup;
+			children = (
+				EE96EC98243CE483006F6389 /* ApiClient.swift */,
+			);
+			path = "API client";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +198,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE96EC70243C6163006F6389 /* ViewController.swift in Sources */,
+				EE96EC96243CAFCA006F6389 /* AuthResponse.swift in Sources */,
+				EE96EC83243C64D4006F6389 /* LocationTableViewController.swift in Sources */,
+				EE96EC88243C68E1006F6389 /* MapViewController.swift in Sources */,
+				EE96EC70243C6163006F6389 /* LoginViewController.swift in Sources */,
+				EE96EC94243CACE3006F6389 /* AuthRequest.swift in Sources */,
+				EE96EC9B243D05AC006F6389 /* Utils.swift in Sources */,
+				EE96EC92243CA807006F6389 /* Student.swift in Sources */,
+				EE96EC90243C946C006F6389 /* GeoCodingResultViewController.swift in Sources */,
+				EE96EC99243CE483006F6389 /* ApiClient.swift in Sources */,
+				EE96EC8C243C811D006F6389 /* LocationsResult.swift in Sources */,
+				EE96EC8E243C9453006F6389 /* AddLocationViewController.swift in Sources */,
 				EE96EC6C243C6163006F6389 /* AppDelegate.swift in Sources */,
+				EE96EC86243C652A006F6389 /* StudentLocation.swift in Sources */,
+				EE96EC8A243C7BA1006F6389 /* Api.swift in Sources */,
 				EE96EC6E243C6163006F6389 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.sverstal.OnTheMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.sverstal.OnTheMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
