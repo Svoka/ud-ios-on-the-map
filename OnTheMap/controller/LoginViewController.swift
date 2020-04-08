@@ -86,7 +86,7 @@ class LoginViewController: UIViewController, UITextViewDelegate, UITextFieldDele
     
     func togglePreloader(isVisible: Bool) {
         preloader.isHidden = !isVisible
-        submitButton.isEnabled = isVisible
+        submitButton.isEnabled = !isVisible
     }
     
     func navigateToNextScreen() {

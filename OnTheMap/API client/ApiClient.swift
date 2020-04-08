@@ -48,10 +48,42 @@ class ApiClient {
             if (error != nil) {
                 result(nil, error)
             } else {
-                self.loadUserData(userId: response!.account.key, result: result)
+                self.loadUserData(userId: response!.account!.key, result: result)
             }
         }
         )
+    }
+    
+    func logout(result: @escaping (AuthResponse?, ApiError?)->Void) {
+        var request = URLRequest(url: URL(string: getUrl(for: .login))!)
+        request.httpMethod = "DELETE"
+        var xsrfCookie: HTTPCookie? = nil
+        let sharedCookieStorage = HTTPCookieStorage.shared
+        for cookie in sharedCookieStorage.cookies! {
+          if cookie.name == "XSRF-TOKEN" { xsrfCookie = cookie }
+        }
+        if let xsrfCookie = xsrfCookie {
+          request.setValue(xsrfCookie.value, forHTTPHeaderField: "X-XSRF-TOKEN")
+        }
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) { data, response, error in
+            if error != nil {
+                result(nil, .networkError)
+                return
+            }
+            let range = 5..<data!.count
+            let newData = data?.subdata(in: range)
+          
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            
+            guard let decoded = try? decoder.decode(AuthResponse.self, from: newData!) else {
+                result(nil, .decodingError)
+                return
+            }
+            result(decoded, nil)
+        }
+        task.resume()
     }
     
     private func loadUserData(userId: String, result: @escaping (Student?, ApiError?) -> Void) {
@@ -64,7 +96,7 @@ class ApiClient {
     }
     
 
-    func postLocation(location: StudentLocation, result: @escaping (Bool?, ApiError?) -> Void) {
+    func postLocation(location: StudentLocation, result: @escaping (StudentLocationResponse?, ApiError?) -> Void) {
         makePOSTRequest(endpoint: .addLocation, data: location, stripSymbols: false, result: result)
     }
     

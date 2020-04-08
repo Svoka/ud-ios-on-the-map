@@ -55,7 +55,7 @@ class GeoCodingResultViewController: UIViewController, MKMapViewDelegate {
         togglePreloader(isVisible: true)
         
         let studentLocation = StudentLocation(firstName: student.firstName, lastName: student.lastName, longitude: location!.longitude, latitude: location!.latitude, mapString: mapString ?? "", mediaURL: link!, uniqueKey: student.key)
-        apiClient.postLocation(location: studentLocation, result: { (isOk, error) in
+        apiClient.postLocation(location: studentLocation, result: { (response, error) in
             DispatchQueue.main.async {
                 self.togglePreloader(isVisible: false)
                 if error != nil {

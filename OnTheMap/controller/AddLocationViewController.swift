@@ -19,10 +19,6 @@ class AddLocationViewController: UIViewController {
     var location: CLLocationCoordinate2D?
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         togglePreloader(isVisible: false)
     }

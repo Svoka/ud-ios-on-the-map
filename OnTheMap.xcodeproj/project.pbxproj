@@ -25,6 +25,7 @@
 		EE96EC96243CAFCA006F6389 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC95243CAFCA006F6389 /* AuthResponse.swift */; };
 		EE96EC99243CE483006F6389 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC98243CE483006F6389 /* ApiClient.swift */; };
 		EE96EC9B243D05AC006F6389 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE96EC9A243D05AC006F6389 /* Utils.swift */; };
+		EEDD293A243DB72E00631EE1 /* StudentLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD2939243DB72E00631EE1 /* StudentLocationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		EE96EC95243CAFCA006F6389 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		EE96EC98243CE483006F6389 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		EE96EC9A243D05AC006F6389 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		EEDD2939243DB72E00631EE1 /* StudentLocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocationResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				EE96EC91243CA807006F6389 /* Student.swift */,
 				EE96EC93243CACE3006F6389 /* AuthRequest.swift */,
 				EE96EC95243CAFCA006F6389 /* AuthResponse.swift */,
+				EEDD2939243DB72E00631EE1 /* StudentLocationResponse.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				EE96EC94243CACE3006F6389 /* AuthRequest.swift in Sources */,
 				EE96EC9B243D05AC006F6389 /* Utils.swift in Sources */,
 				EE96EC92243CA807006F6389 /* Student.swift in Sources */,
+				EEDD293A243DB72E00631EE1 /* StudentLocationResponse.swift in Sources */,
 				EE96EC90243C946C006F6389 /* GeoCodingResultViewController.swift in Sources */,
 				EE96EC99243CE483006F6389 /* ApiClient.swift in Sources */,
 				EE96EC8C243C811D006F6389 /* LocationsResult.swift in Sources */,

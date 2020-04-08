@@ -23,12 +23,10 @@ class LocationTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tableView.reloadData()
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -80,7 +78,15 @@ class LocationTableViewController: UITableViewController {
     }
     
     @IBAction func logoutTapped(_ sender: Any) {
-        navigationController?.dismiss(animated: true, completion: nil)
+        apiClient.logout { (authResponse, error) in
+            DispatchQueue.main.async {
+                if (error != nil) {
+                    Utils.showAlert(alertMessage: self.apiClient.getAlertDataFromError(error: error!), buttonTitle: "Ok", presenter: self)
+                } else {
+                    self.navigationController?.dismiss(animated: true, completion: nil)
+                }
+            }
+        }
     }
     
     @IBAction func reloadTapped(_ sender: Any) {
